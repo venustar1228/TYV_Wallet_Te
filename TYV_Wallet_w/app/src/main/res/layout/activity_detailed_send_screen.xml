@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".sendScreen">
+    <include layout="@layout/toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="#1B1B1B"
+        android:id="@+id/id_send_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:text="TYV BALANCE"
+            android:textColor="#40C4FF"
+            android:textSize="12dp"
+            android:id="@+id/id_tyc_bal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_tyc_bal">
+
+            <ImageView
+                android:id="@+id/id_ic_ethereum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_ethereum__eth_icon_ethereum" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/id_ic_ethereum"
+                android:paddingStart="20dp"
+                android:text="20,000"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_warningText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/id_send_top"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/id_warningImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_report_problemwarning"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/id_warningImg"
+            android:text="A commission is charged for sending TYV.\nThe amount of the commission depends on the quantity and current TYV rate."
+            android:textColor="#E8501F" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/id_input_add"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_warningText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/id_rec_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Receiver's address"
+            android:textColor="@color/white"
+            android:textColorHint="#757575" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_rec_add">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="input receiving address"
+                android:textColor="#E8501F" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:backgroundTint="#212121"
+                android:text="PASTE"
+                android:textColor="#40C4FF" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/id_tyv_amount"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_input_add">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/id_tyv_amount_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TYV amount to send"
+            android:textColor="@color/white"
+            android:textColorHint="#757575" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/ic_vector" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/id_tyv_amount_input"
+            android:text="input amount to send"
+            android:layout_marginLeft="5dp"
+            android:textColor="#E8501F" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/id_sendingFee"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/id_tyv_amount">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Sending fee"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#9E9E9E" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="5 TYV"
+            android:textSize="20dp"
+
+            android:textColor="#9E9E9E" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:background="#3E4444">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:id="@+id/id_send_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/id_send_text"
+                android:src="@drawable/ic_arrow_forward" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

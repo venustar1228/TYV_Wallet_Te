@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".MainActivity">
+    <include layout="@layout/first_page_toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:padding="10dp"
+        android:background="#3D5AFE"
+        android:id="@+id/id_coinLine">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coin"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="Balance"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_coinLine"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_icon_t"
+            android:id="@+id/id_icon_t"
+            android:paddingLeft="10dp"
+            android:paddingVertical="15dp"/>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TYV"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+            android:layout_toRightOf="@+id/id_icon_t"
+            android:id="@+id/id_text_tyv"/>
+
+        <Button
+            android:id="@+id/id_button_send"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_toRightOf="@+id/id_text_tyv"
+            android:backgroundTint="#3D5AFE"
+            android:text="Send   "
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:color="@color/white"
+            app:icon="@drawable/ic_baseline_north_24"></Button>
+
+        <Button
+            android:id="@+id/id_button_receive"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/id_button_send"
+            android:backgroundTint="#3D5AFE"
+            android:text="Receive"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:icon="@drawable/ic_baseline_south_24"></Button>
+    </RelativeLayout>
+</RelativeLayout>

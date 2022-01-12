@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".sendScreen">
+    <include layout="@layout/toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="#1B1B1B"
+        android:id="@+id/id_send_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:text="TYV BALANCE"
+            android:textColor="#40C4FF"
+            android:textSize="12dp"
+            android:id="@+id/id_tyc_bal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_tyc_bal">
+
+            <ImageView
+                android:id="@+id/id_ic_ethereum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_ethereum__eth_icon_ethereum" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/id_ic_ethereum"
+                android:paddingStart="20dp"
+                android:text="20,000"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_send_top">
+
+        <Button
+            android:id="@+id/id_button_sendToW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="#3D5AFE"
+            android:text="SEND TO TYV WALLET" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_button_sendToW"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#3D5AFE"
+            android:layout_centerHorizontal="true"
+            android:text="SEND TO TYV EXTERNAL WALLET" />
+    </RelativeLayout>
+</RelativeLayout>

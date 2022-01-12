@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".sendScreen">
+    <include layout="@layout/toolbar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:padding="13dp"
+        android:layout_centerHorizontal="true"
+        android:text="YOUR TYV ADDRESS"
+        android:textColor="#40C4FF"
+        android:textSize="12dp"
+        android:id="@+id/id_rec_text"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_rec_button_group"
+        android:layout_below="@+id/id_rec_text">
+        <Button
+            android:id="@+id/id_button_sendToW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#3D5AFE"
+            android:layout_centerHorizontal="true"
+            android:text="TRANSFER FROM EXCHANGE" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_button_sendToW"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#3D5AFE"
+            android:layout_centerHorizontal="true"
+            android:text="TRANSFER FROM WALLET" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/id_earth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_earthic_earch"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/id_rec_button_group"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/id_temp_tyv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0x6E3F59cfDd2E6d51738E0f1f5A5702Ae5e56eDAD"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/id_earth"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/id_rec_but_copyAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_temp_tyv_address"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#3D5AFE"
+        android:layout_centerHorizontal="true"
+        android:text="COPY ADDRESS" />
+
+    <TextView
+        android:id="@+id/id_rec_qr_add_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_rec_but_copyAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="13dp"
+        android:text="YOUR TYV QR CODE ADDRESS"
+        android:textColor="#40C4FF"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/id_IVQRcode"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/id_rec_qr_add_text"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher" />
+</RelativeLayout>
