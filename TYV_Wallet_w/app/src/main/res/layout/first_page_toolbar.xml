@@ -3,30 +3,34 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#3D5AFE">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="25dp"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="10dp">
+        android:layout_marginLeft="10dp"
+        android:padding="25dp">
+
         <ImageView
-            android:id="@+id/id_left_icon"
+            android:id="@+id/id_three_base"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_menu_24"/>
+            android:src="@drawable/ic_baseline_menu_24" />
+
         <TextView
             android:id="@+id/id_text_toolbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_toEndOf="@+id/id_left_icon"
+            android:layout_toEndOf="@+id/id_three_base"
             android:text="Receive TYV"
-            android:textSize="20dp"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_more_vert_24"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_more_vert_24" />
     </RelativeLayout>
 </RelativeLayout>

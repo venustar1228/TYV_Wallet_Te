@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Real/TYV_Wallet_Te/TYV_Wallet_w/app/src/main/res/drawable/menu_background_color_state.xml" value="0.15885416666666666" />
+        <entry key="..\:/Real/TYV_Wallet_Te/TYV_Wallet_w/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Real/TYV_Wallet_Te/TYV_Wallet_w/app/src/main/res/layout/activity_send_screen.xml" value="0.14270833333333333" />
+        <entry key="..\:/Real/TYV_Wallet_Te/TYV_Wallet_w/app/src/main/res/layout/first_page_toolbar.xml" value="0.14270833333333333" />
+        <entry key="..\:/Real/TYV_Wallet_Te/TYV_Wallet_w/app/src/main/res/layout/main_nav.xml" value="0.14270833333333333" />
+        <entry key="..\:/Real/TYV_Wallet_Te/TYV_Wallet_w/app/src/main/res/layout/menu_background_color_state.xml" value="0.14270833333333333" />
+        <entry key="..\:/Real/TYV_Wallet_Te/TYV_Wallet_w/app/src/main/res/layout/nav_header.xml" value="0.33" />
+        <entry key="..\:/Real/TYV_Wallet_Te/TYV_Wallet_w/app/src/main/res/menu/navigation_menu.xml" value="0.14270833333333333" />
         <entry key="..\:/TYV_Wallet_w - Copy/app/src/main/res/layout/toolbar.xml" value="0.14628623188405798" />
         <entry key="..\:/TYV_Wallet_w/app/src/main/res/layout/activity_detailed_send_screen.xml" value="0.14492753623188406" />
         <entry key="..\:/TYV_Wallet_w/app/src/main/res/layout/activity_main.xml" value="0.22" />
